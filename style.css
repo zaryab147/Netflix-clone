@@ -186,20 +186,17 @@ nav img {
 
 .gumman {
     color: white;
-    margin: 5px 0px -35px 165px;
     font-size: 13px;
     font-weight: bold;
-
-}
-
-.cardpic {
     position: relative;
-    margin-left: 170px;
-    top: 60px;
-
+    left: 150px;
+    bottom: 15px;
+    width: 280px;
 }
 
-.cardpic1 {
+
+
+/* .cardpic1 {
     margin-left: 170px;
     margin-top: 90px;
 }
@@ -207,30 +204,35 @@ nav img {
 .cardpic2 {
     margin-left: 170px;
     margin-top: 45px;
-}
+} */
 
 
 .container {
     display: flex;
-    overflow: auto;
+    align-items: center;
+    /* overflow: auto; */
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.container::-webkit-scrollbar {
+/* .container::-webkit-scrollbar {
     display: none;
-}
+} */
 
-.container div {
-    margin: 50px 0px;
-
+.card {
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     border-radius: 15px;
+    position: relative;
     height: 300px;
     width: 250px;
-
 }
+.card-pic{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+
 
 
 h2 {
@@ -430,8 +432,12 @@ footer {
     gap: 25px;
 }
 
-.bugles , .andriod , .iphone , .btns , .btn1 {
-margin: auto;
+.bugles,
+.andriod,
+.iphone,
+.btns,
+.btn1 {
+    margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -476,6 +482,8 @@ margin: auto;
         align-items: center;
         margin: 5px 5px 5px 5px;
         font-size: 13px;
+        left: 15px;
+
     }
 }
 
@@ -513,5 +521,11 @@ margin: auto;
         padding: 10px 10px;
         font-size: 12px;
 
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .mainbox {
+        margin-top: 120px;
     }
 }
